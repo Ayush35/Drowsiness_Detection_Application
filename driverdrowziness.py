@@ -9,7 +9,7 @@ st.title('Driver Drowziness Detection')
 st.sidebar.subheader('About')
 st.sidebar.write('A computer vision system made with the help of opencv that can automatically detect driver drowsiness in a real-time video stream and then play an alarm if the driver appears to be drowsy.')
 
-dir_path= (r'Models')
+dir_path= (r'models')
 model = load_model(dir_path)
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
