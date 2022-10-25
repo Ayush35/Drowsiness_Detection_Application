@@ -3,4 +3,4 @@ opencv_python_headless
 tensorflow
 numpy
 pygame
-simpleaudio
+libasound2
