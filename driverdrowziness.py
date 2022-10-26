@@ -16,7 +16,7 @@ eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml
 st.header("Webcam Live Feed")
 run = st.checkbox('Click to Run/Off the cam',value=True)
 FRAME_WINDOW = st.image([])
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 Score = 0
 eye_cond = 1
 
