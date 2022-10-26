@@ -1,5 +1,5 @@
 streamlit
-opencv_python_headless
+opencv_python_headless==4.6.0.66
 tensorflow
 numpy
 playsound
