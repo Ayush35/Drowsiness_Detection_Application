@@ -3,7 +3,7 @@ import cv2
 import tensorflow as tf
 from tensorflow.keras.models import load_model
 import numpy as np
-import pygame
+from playsound import playsound
 
 st.title('Driver Drowziness Detection')
 st.sidebar.subheader('About')
@@ -17,8 +17,6 @@ st.header("Webcam Live Feed")
 run = st.checkbox('Click to Run/Off the cam',value=True)
 FRAME_WINDOW = st.image([])
 cap = cv2.VideoCapture(0)
-pygame.mixer.init()    
-sound= pygame.mixer.Sound(r'alarm.wav')
 Score = 0
 eye_cond = 1
 
@@ -66,7 +64,7 @@ while run:
             Score=Score+1
             if(Score>25):
                 try:
-                    sound.play()
+                    playsound('alarm.wav')
                 except:
                     pass
             
